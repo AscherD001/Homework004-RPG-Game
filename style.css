@@ -1,0 +1,407 @@
+body {
+    background: url("assets/images/bkg001.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: arial;
+    color: white;
+    z-index: -10000;
+}
+#play {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+/*    background: url("assets/images/PlayButton001.png");*/
+    height: 50px;
+    width: 50px;
+}
+#pause {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+/*    background: url("assets/images/PlayButton002.png");*/
+    height: 50px;
+    width: 50px;
+}
+.background {
+    width: 100%;
+    height: 100%;
+    size: cover;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -5000
+}
+.wrapper {
+	position: relative;
+	margin: 0px;
+}
+.announce {
+	margin: 0 auto;
+	width: 100%;
+	height: 100px;
+    line-height: 90px;
+	text-align: center;
+    z-index: -7500;
+}
+.enemyHP {
+    position: absolute;
+    font-size: 100px;
+    top: 0px;
+    left: 69%;
+}
+.enemyDamage {
+    position: absolute;
+    font-size: 100px;
+    top: 70px;
+    left: 70%;
+    opacity: 0;
+}
+.hidden {
+    opacity: 0;
+}
+.playerHP {
+    position: absolute;
+    font-size: 100px;
+    top: 0px;
+    left: 18%;
+}
+.playerDamage {
+    position: absolute;
+    font-size: 100px;
+    top: 70px;
+    left: 26%;
+    opacity: 0;
+}
+.eDamage {
+    position: absolute;
+    opacity: 1;
+    animation: eDamage 1.1s linear;
+}
+@keyframes eDamage {
+    from {
+        top: 70px;
+        opacity: 1;
+    }
+    to {
+        top: -140px;
+        opacity: 0;
+    }
+}
+.pDamage {
+    position: absolute;
+    opacity: 1;
+    animation: pDamage 1.1s linear;
+}
+@keyframes pDamage {
+    from {
+        top: 70px;
+        opacity: 1;
+    }
+    to {
+        top: -140px;
+        opacity: 0;
+    }
+}
+.lose {
+    position: absolute;
+    opacity: 1;
+    animation: lose 1.1s linear;
+}
+@keyframes lose {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.player {
+	transform: scaleX(-1);
+}
+.enemy {
+
+}
+.atkButton {
+	position: absolute;
+	top: 238px;
+	right: 44%;
+	background: url("assets/images/atkButton.png");
+    height: 52px;
+    width: 122px;
+    filter: drop-shadow(2px 2px 2px black);
+    /*opacity: .8;*/
+}
+.wrapLaharl {
+	transform: scaleX(-1);
+}
+.wrapEtna {
+	transform: scaleX(-1);
+}
+.wrapFlonne {
+	transform: scaleX(-1);
+}
+.wrapVyers {
+	transform: scaleX(-1);
+}
+.wrapNinja {
+	transform: scaleX(-1);
+}
+#laharlPlayer {
+	position: absolute;
+	top: 20px;
+	right: 33.333%;
+	background: url("assets/images/laharlIdle.png");
+    height: 56px;
+    width: 51px;
+    animation: laharlIdle 1s steps(5) infinite;
+    transform: scaleX(3) scaleY(3);
+}
+#etnaPlayer {
+	position: absolute;
+	top: 20px;
+	right: 33.333%;
+	background: url("assets/images/etnaIdle.png");
+    height: 56px;
+    width: 40px;
+    animation: etnaIdle 1s steps(6) infinite;
+    transform: scaleX(3) scaleY(3);
+}
+#flonnePlayer {
+	position: absolute;
+	top: 20px;
+	right: 33.333%;
+	background: url("assets/images/flonneIdle.png");
+    height: 56px;
+    width: 40px;
+    animation: flonneIdle 1s steps(6) infinite;
+    transform: scaleX(3) scaleY(3);
+}
+#vyersPlayer {
+	position: absolute;
+	top: 20px;
+	right: 33.333%;
+	background: url("assets/images/vyersIdle.png");
+    height: 56px;
+    width: 32px;
+    animation: vyersIdle 1s steps(5) infinite;
+    transform: scaleX(3) scaleY(3);
+}
+#ninjaPlayer {
+	position: absolute;
+	top: 20px;
+	right: 33.333%;
+	background: url("assets/images/ninjaIdle.png");
+    height: 56px;
+    width: 40px;
+    animation: ninjaIdle 1s steps(6) infinite;
+    transform: scaleX(3) scaleY(3);
+}
+#laharlEnemy {
+	position: absolute;
+	top: 20px;
+	right: 33.333%;
+	background: url("assets/images/laharlIdle.png");
+    height: 56px;
+    width: 51px;
+    animation: laharlIdle 1s steps(5) infinite;
+    transform: scaleX(3) scaleY(3);
+    
+}
+#etnaEnemy {
+	position: absolute;
+	top: 20px;
+	right: 33.333%;
+	background: url("assets/images/etnaIdle.png");
+    height: 56px;
+    width: 40px;
+    animation: etnaIdle 1s steps(6) infinite;
+    transform: scaleX(3) scaleY(3);
+}
+#flonneEnemy {
+	position: absolute;
+	top: 20px;
+	right: 33.333%;
+	background: url("assets/images/flonneIdle.png");
+    height: 56px;
+    width: 40px;
+    animation: flonneIdle 1s steps(6) infinite;
+    transform: scaleX(3) scaleY(3);
+}
+#vyersEnemy {
+	position: absolute;
+	top: 20px;
+	right: 33.333%;
+	background: url("assets/images/vyersIdle.png");
+    height: 56px;
+    width: 32px;
+    animation: vyersIdle 1s steps(5) infinite;
+    transform: scaleX(3) scaleY(3);
+}
+#ninjaEnemy {
+	position: absolute;
+	top: 20px;
+	right: 33.333%;
+	background: url("assets/images/ninjaIdle.png");
+    height: 56px;
+    width: 40px;
+    animation: ninjaIdle 1s steps(6) infinite;
+    transform: scaleX(3) scaleY(3);
+}
+#laharl {
+	position: absolute;
+	top: 250px;
+	right: 20%;
+	background: url("assets/images/laharlIdle.png");
+    height: 56px;
+    width: 51px;
+    animation: laharlIdle 1s steps(5) infinite;
+    transform: scaleX(3) scaleY(3);
+    
+}
+@keyframes laharlIdle {
+	from { background-position: 0px; }
+	to { background-position: -255px; }
+}
+#etna {
+	position: absolute;
+	top: 250px;
+	right: 50%;
+	background: url("assets/images/etnaIdle.png");
+    height: 56px;
+    width: 40px;
+    animation: etnaIdle 1s steps(6) infinite;
+    transform: scaleX(3) scaleY(3);
+}
+@keyframes etnaIdle {
+	from { background-position: 0px; }
+	to { background-position: -240px; }
+}
+#flonne {
+	position: absolute;
+	top: 250px;
+	right: 80%;
+	background: url("assets/images/flonneIdle.png");
+    height: 56px;
+    width: 40px;
+    animation: flonneIdle 1s steps(6) infinite;
+    transform: scaleX(3) scaleY(3);
+}
+@keyframes flonneIdle {
+	from { background-position: 0px; }
+	to { background-position: -240px; }
+}
+#vyers {
+	position: absolute;
+	top: 400px;
+	right: 33.333%;
+	background: url("assets/images/vyersIdle.png");
+    height: 56px;
+    width: 32px;
+    animation: vyersIdle 1s steps(5) infinite;
+    transform: scaleX(3) scaleY(3);
+}
+@keyframes vyersIdle {
+	from { background-position: 0px; }
+	to { background-position: -160px; }
+}
+#ninja {
+	position: absolute;
+	top: 400px;
+	right: 66.667%;
+	background: url("assets/images/ninjaIdle.png");
+    height: 56px;
+    width: 40px;
+    animation: ninjaIdle 1s steps(6) infinite;
+    transform: scaleX(3) scaleY(3);
+}
+@keyframes ninjaIdle {
+	from { background-position: 0px; }
+	to { background-position: -240px; }
+}
+@keyframes dead {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+@media screen and (min-width: 1281px) {
+    .playerHP {
+        left: 18%;
+    }
+    .playerDamage {
+        left: 19%;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .enemyDamage {
+        left: 72%;
+    }
+    .playerHP {
+        font-size: 100px;
+        left: 17%;
+    }
+    .playerDamage {
+        font-size: 100px;
+        left: 19%;
+    }
+}
+@media screen and (max-width: 980px) {
+    .enemyDamage {
+        font-size: 100px;
+        left: 72%;
+        opacity: 0;
+    }
+    .playerHP {
+        font-size: 100px;
+        left: 12%;
+    }
+    .playerDamage {
+        font-size: 100px;
+        left: 13%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .enemyHP {
+        font-size: 50px;
+        left: 75%;
+    }
+    .enemyDamage {
+        font-size: 75px;
+        left: 75%;
+        opacity: 0;
+    }
+    .playerHP {
+        font-size: 50px;
+        left: 3%;
+    }
+    .playerDamage {
+        font-size: 75px;
+        left: 5%;
+    }
+    .atkButton {
+        top: 238px;
+        right: 41%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .enemyHP {
+        font-size: 50px;
+        left: 75%;
+    }
+    .enemyDamage {
+        font-size: 75px;
+        left: 75%;
+        opacity: 0;
+    }
+    .playerHP {
+        font-size: 50px;
+        left: 3%;
+    }
+    .playerDamage {
+        font-size: 75px;
+        left: 5%;
+    }
+    .atkButton {
+        top: 238px;
+        right: 37%;
+    }
+}
